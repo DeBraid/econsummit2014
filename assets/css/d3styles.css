@@ -1,0 +1,183 @@
+@import url(../style.css?aea6f0a);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+.jumbotron {
+  background-color: #FFF;
+}
+
+#videoballs-container {
+  margin-bottom: 100px;
+}
+
+#searchMenu {
+  display: inline-block;
+  padding-left: 0;
+}
+
+#sankey-chart {
+  margin-left: -40px;
+  height: 506px;
+  width: 100%;
+}
+
+
+text {
+  font: 10px sans-serif;
+}
+
+#mouse-tip {
+  text-align: right;
+  margin: 20px 200px 20px 0;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.axis path, 
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+  font-size: 1.6em;
+}
+
+.year.label {
+  font: 500 196px "Helvetica Neue";
+  fill: #ddd;
+}
+
+.year.label.active {
+  fill: #aaa;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: move;
+}
+
+.searched {
+  fill: red;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown a {
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.dropdown-menu > li > a {
+  line-height: 0.7em;
+}
+
+/* LINKS.HTML */
+
+.city path {
+  fill: none;
+  stroke-width: 0.2em;
+}
+
+.city text {
+  font-size: 0.7em;
+}
+
+.city path:hover {
+  fill: #000;
+  fill-opacity: 0.1;
+  stroke-width: 0.6em;
+
+}
+
+#line-chart {
+  position: relative;
+}
+
+#line-chart .x path.domain {
+  display: none;
+}
+
+.node rect {
+  cursor: move;
+  fill-opacity: .8;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 0.75em;
+}
+ 
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .1;
+}
+ 
+.link:hover {
+  stroke-opacity: .5;
+}
+
+.panel-title:hover  { 
+  cursor: pointer; 
+} 
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+}
+
+.panel-body {
+  font-size: 0.9em;
+}
+
+#line-chart-container {
+  margin: 2em 0 2em 0;
+}
+
+#redraw {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="accord">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Hamilton Economic Summit</title>
+
+    <!-- Bootstrap core -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  
+    <!-- import angular ui -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+
+    <!-- data and d3 -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/d3styles.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50731012-1', 'hamiltoneconomicsummit.ca');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">#HES2014 DATA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/economy-animation.html">Canadian GDP and Income</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="container">  
+          
+          <div class="row">
+              <div class="col-lg-12">
+                <h1>Hamilton GDP By Sector</h1>
+                <h3>1987 - 2014</h3>
+                <hr />
+              </div>
+          </div>
+
+        </div>
+      </div>
+            
+      <div class="row">
+
+ 
+            <div class="col-lg-9">
+
+                <div id="sector-line">
+                  <!-- line sector chart -->
+                </div> 
+
+            </div>  
+
+            <div class="col-lg-3">
+              
+                <!-- AGENDA / FORMAT SECTION -->
+              
+            </div>
+
+      </div><!-- row -->
+    </div><!-- container -->
+
+  <!-- HAMILTON CHAMBER -->
+  <div id="r">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>HAMILTON CHAMBER OF COMMERCE</h4>
+          <p>As the voice of ethical enterprise, we are committed to making the City of Hamilton and all of its communities a great place to live, work, play, visit and invest; by promoting private sector jobs and prosperity growth of individuals, organizations and businesses.</p>
+          <p>120 King Street West, Plaza Level<br/>
+            Hamilton, ON<br/>
+            905-522-1151<br/>
+          </p>
+
+          <div class="contact-links">
+            <p><i class="fa fa-arrow-circle-o-right"><a href="mailto:hcc@hamiltonchamber.ca?Subject=#HES2014"></i> Email Us</a><span> or visit </span>
+            <a href="http://www.hamiltonchamber.ca" target="_blank">hamiltonchamber.ca </a><i class="fa fa-arrow-circle-o-left"></i>
+            </p>
+          </div>
+
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- r wrap -->
+
+
+  <!-- FOOTER -->
+  <div id="f">
+    <div id="social" class="container">
+      <div class="row centered">
+        <a href="http://twitter.com/hamiltonchamber" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/pages/Hamilton-Chamber-of-Commerce/140038556040986" target="_blank"><i class="fa fa-facebook"></i></a><a href="http://www.linkedin.com/company/hamilton-chamber-of-commerce" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div><!-- row -->
+      <div id="dev" class="row centered"><a href="http://www.cacheflow.ca" target="_blank">#HES2014 web site by Derek Braid</a></div>
+    </div><!-- container -->
+  </div><!-- Footer -->
+
+
+    <!-- Bootstrap, jQuery, Scroll JavaScript, other d3 
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/sector-line.js"></script>
+    
+    
+    
+
+  </body>
+</html>
