@@ -5,7 +5,7 @@ function radius(d) { return d.uRate; }
 function color(d) { return d.region; }
 function key(d) { return d.city; }
 
-
+// d3 not defined here...
 var tip = d3.tip()
     .attr('class', 'd3-tip')
     .html(function(d) { 
